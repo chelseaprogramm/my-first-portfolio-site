@@ -1,0 +1,78 @@
+body{background-color: black; color: white;}
+body{background-image: url('background.png')}
+body{background-repeat: no-repeat; background-position: center; background-size: cover;}
+body{min-height:100vh;}
+
+
+img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 36px;
+}
+
+a {
+    color: white;
+    text-shadow: white 0 0 10px, 0 0 15px white, 0 0 30px white;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+a:hover {
+    color: papayawhip;
+}
+
+section {
+    background-color: var(--card-bg); padding: 1rem;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+    max-width: 700px;
+    margin: 1.5rem auto 20px;
+
+}
+
+header {
+    text-align: center;
+}
+.profile {
+    display: flex; align-items: center; justify-content: center; gap: 20px;
+}
+.nav {
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+}
+
+#projects ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+@media (max-width: 600px) {
+    #projects ul {
+    }
+}
+
+
+section:hover {
+    transform: translateY(-4px);
+}
+
+* {
+   box-sizing: border-box;
+}
+
+:root {
+    --card-bg: rgba(34, 34, 34, 0.4);
+}
+
+a:focus-visible {
+    outline: 2px solid white;
+}
+#bio p {
+    line-height: 1.5;
+}
